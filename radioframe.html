@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Student-Zone 3 | Blog</title>
+</head>
+<style>
+    .panel {
+                height: 150px;
+                width: 150px;
+                transition: 0.5s;
+            }
+
+            .panel:hover {
+                height: 150px;
+                width: 150px;
+                opacity: 0.6;
+                transition: 0.5s;
+            }
+
+            .panel:focus {
+                height: 150px;
+                width: 150px;
+                opacity: 0.5;
+                transition: 0.5s;
+            }
+</style>
+<body>
+    <img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/hot108?esPlayer&amp;cb=849351.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-hot108jamz.png');"
+    src="https://powerhitz.com/images/box-hot108jamz.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/1power?esPlayer&amp;cb=850881.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-1power.png');"
+    src="https://powerhitz.com/images/box-1power.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/officemix?esPlayer&amp;cb=854051.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-officemix.jpg');"
+    src="https://powerhitz.com/images/box-officemix.jpg">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/hitlist?esPlayer&amp;cb=855261.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-thehitlist.png');"
+    src="https://powerhitz.com/images/box-thehitlist.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/realrnb?esPlayer&amp;cb=856031.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-realrnb-1.png');"
+    src="https://powerhitz.com/images/box-realrnb-1.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/bumpin?esPlayer&amp;cb=856821.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-bumpincsoul.png');"
+    src="https://powerhitz.com/images/box-bumpincsoul.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/pureclassicrock?esPlayer&amp;cb=857521.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-pcr.png');"
+    src="https://powerhitz.com/images/box-pcr.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/timeblender?esPlayer&amp;cb=858501.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-time.png');"
+    src="https://powerhitz.com/images/box-time.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/planet?esPlayer&amp;cb=859041.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-planet.png');"
+    src="https://powerhitz.com/images/box-planet.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/70s?esPlayer&amp;cb=859701.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-70s.png');"
+    src="https://powerhitz.com/images/box-70s.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/ultimate80s?esPlayer&amp;cb=860841.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-80s.png');"
+    src="https://powerhitz.com/images/box-80s.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/90sarea?esPlayer&amp;cb=861311.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-90sarea.png');"
+    src="https://powerhitz.com/images/box-90sarea.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/backbounce?esPlayer&amp;cb=861761.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-bb.png');"
+    src="https://powerhitz.com/images/box-bb.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/country?esPlayer&amp;cb=862391.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-tc.png');"
+    src="https://powerhitz.com/images/box-tc.png">
+<img class="panel"
+    onclick="cs_change_music('https://live.powerhitz.com/millennium?esPlayer&amp;cb=862961.mp3&amp;aw_0_req.gdpr=false');openMusic();pannel_chg('https://powerhitz.com/images/box-xmas.png');"
+    src="https://powerhitz.com/images/box-xmas.png">
+
+    <div id="player" class="video-player">
+        <video style="height: 30px;" onplay="autoplay" id="video" preload="auto"
+            src="https://live.powerhitz.com/officemix?aw_0_req.gdpr=true"
+            poster=""
+            class="video"></video>
+
+        <div class="player-controls">
+            <div class="video-progress">
+                <div id="juisebar" style="width:100%;" class="video-progress-filled"></div>
+            </div>
+
+            <button id="ppbutton" class="play-button" title="Play">►</button>
+
+            <input type="range" class="volume" min="0" max="1" step="0.01" value="1" />
+
+            <div class="time">
+                <span class="current">0:00</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function pannel_chg(image) {
+            document.getElementById("pannel_imgs").setAttribute('src', image);
+        }
+    </script>
+    <script>
+        function cs_change_music(music) {
+            document.getElementById("video").setAttribute('src', music);
+            document.getElementById("video").load();
+            document.getElementById("video").play();
+        }
+    </script>
+    <script>
+        function start() {
+            document.getElementById("video").load();
+            document.getElementById("video").play();
+        }
+
+        function stop() {
+            document.getElementById("video").pause();
+        }
+    </script>
+    <script>
+        function openMusic() {
+            console.log("starting audio stream");
+        }
+
+        function closeMusic() {
+            console.log("starting audio stream");
+        }
+    </script>
+    <script src="./video.js"></script>
+</body>
+
+</html>
