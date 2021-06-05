@@ -14,7 +14,7 @@
                 content="After months of work, its here, WorldWideNet. With TV, Radio, Search, News, And more to come. Its the perfect platform for everyone">
         <meta name="keywords" content="Homepage,Startpage,Start,Easystart">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>WorldWideNet | Home</title>
+        <title>WorldWideNet | Radio</title>
         <link rel="stylesheet" type="text/css" href="https://formscript.netlify.app/cdn/css/square/1.0/formscript.css"
                 media="screen" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,7 @@
                         </div>
                 </div>
                 <div>
-                        <div style="margin-left: 5px;margin-right: 5px;border-radius: 0 0 15px 15px;padding: 5px;color:white;background-color: rgb(37, 36, 36);padding-bottom: 10px;"
+                        <div style="overflow: auto;white-space: nowrap;margin-left: 5px;margin-right: 5px;border-radius: 0 0 15px 15px;padding: 5px;color:white;background-color: rgb(37, 36, 36);padding-bottom: 10px;"
                                 class="navbar">
                                 <nav style="color: white;">
                                         <ui style="color: white;" class="navli"><a style="color: white;" class="navlink"
@@ -71,21 +71,24 @@
 
 <body>
 
-        <center><iframe src="radioframe.html" style="width: 90%;height: 30em;"></iframe></center>
+        <center><iframe src="radioframe.html" id="rframe" style="width: 90%;height: 30em;border: none;"></iframe></center>
 
-        <div class="footer">
-                <div style="margin-left: 5px;margin-right: 5px;border-radius: 15px 15px 0 0;padding: 5px;color:white;background-color: rgb(37, 36, 36);padding-bottom: 10px;margin-bottom: 0px;bottom: 0px;"
-                        class="navbar">
-                        <nav style="color: white;">
-                                <ui style="color: white;" class="navli"><a style="color: white;" class="navlink"
-                                                href="">2021 <i class="fas fa-copyright"></i></a></ui>
-                                <ui style="color: white;" class="navli"><a style="color: white;" class="navlink"
-                                                href="">Version 0.5 BETA</a></ui>
-                                <ui style="color: white;" class="navli"><a style="color: white;" class="navlink"
-                                                href=""><i class="fas fa-sync-alt"></i> Check For New Content</a></ui>
-                        </nav>
-                </div>
+        <div class="footer" style="
+        bottom: 0px;
+        position: fixed;
+    ">
+        <div style="bottom: 0px;margin-left: 5px;margin-right: 5px;border-radius: 15px 15px 0 0;padding: 5px;color:white;background-color: rgb(37, 36, 36);padding-bottom: 10px;margin-bottom: 0px;bottom: 0px;"
+            class="navbar">
+            <nav style="color: white;">
+                <ui style="color: white;" class="navli"><a style="color: white;" class="navlink" href="">2021 <i
+                            class="fas fa-copyright" aria-hidden="true"></i></a></ui>
+                <ui style="color: white;" class="navli"><a style="color: white;" class="navlink" href="">Version 0.3
+                        BETA</a></ui>
+                <ui style="color: white;" class="navli"><a style="color: white;" class="navlink" href=""><i
+                            class="fas fa-sync-alt" aria-hidden="true"></i> Check For New Content</a></ui>
+            </nav>
         </div>
+    </div>
 
         <script>
                 function closequick() {
@@ -93,9 +96,10 @@
                         setTimeout(function () {
                                 console.log('after');
                         }, 500);
-                        document.getElementById("tilemarg").style.display = "none";
                 }
+                document.getElementById("rframe").style.height = window.innerHeight - '157' +'px';
         </script>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
 </body>
 
 </html>
