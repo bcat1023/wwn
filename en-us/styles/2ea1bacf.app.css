@@ -2,9 +2,7 @@ html {
   color: #000;
   background: #fff;
 }
-body{
-  margin: 0px;
-}
+body,
 div,
 dl,
 dt,
@@ -113,7 +111,6 @@ body {
   background: #fdfdfd;
 }
 .header-wrap {
-  margin-left: 28px;
   min-width: 1110px;
   width: 100%;
   padding-bottom: 20px;
@@ -690,7 +687,6 @@ div.search-inrange-btn {
 }
 .hot-search-contents {
   color: #444;
-  visibility: visible;
   font-size: 13px;
   font-family: Tahoma;
   margin-left: 20px;
@@ -704,7 +700,6 @@ div.search-inrange-btn {
 }
 .tab-module {
   margin-top: 15px;
-  margin-left: 15px;
 }
 .tab-head-container {
   border-bottom: 1px solid #d6e3fa;
